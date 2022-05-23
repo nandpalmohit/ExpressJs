@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4 text-center">
+      <img
+        class="mb-2"
+        src="https://cdn1.iconfinder.com/data/icons/action-states-vol-4-1/48/Sed-09-512.png"
+        alt=""
+        width="80px"
+      />
+      <h1 class="h2 text-primary mb-3 fw-normal Bold">Create Your Post</h1>
+      <hr>
+    <form class="" method="post">
+
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          name="title"
+          id="floatingTitle"
+          placeholder="what is blogdeck"
+        />
+        <label for="floatingTitle">Blog Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingSlugs"
+          placeholder="what-is-***"
+          name="slugs"
+        />
+        <label for="floatingSlugs">Blog Slugs</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea
+          class="form-control"
+          id="floatingContent"
+          placeholder="content"
+          name="content"
+          style="height: 100px;"
+        ></textarea>
+        <label for="floatingContent">Blog Content</label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Create Post</button>
+    </form>
+  </div>
+</div>

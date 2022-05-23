@@ -1,22 +1,32 @@
-    <!-- banner -->
-    <div class="container py-3 my-5 text-center">
-      <h1 class="display-5 fw-bold Bold mb-5">Welcome to BlogDeck - Blogs Page</h1>
-      <div class="row mb-2 g-3">
-          {{#each blogs}}
-        <div class="col-md-6 ">
-          <div class="row shadow-sm position-relative">
-            <div class="col-md-8 ">
-              <span class="badge bg-primary baadge-pill my-3">Development</span>
-              <h3 class="mb-0 text-primary">{{this.title}}</h3>
-              <div class="mb-1 text-muted border-top mt-2 pt-2">Published On Nov 12</div>
-              <a href="/blogs/{{this.slugs}}" class="btn btn-outline-primary mt-2 text-decoration-none">Read More</a>
-            </div>
-            <div class="col-md-4">
-              <img src="https://images.unsplash.com/photo-1436891620584-47fd0e565afb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dmVydGljYWwlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&w=1000&q=80" width="100%" alt="">
-            </div>
+<!-- banner -->
+<div class="container py-3 my-5 text-center">
+  <h1 class="display-5 fw-bold Bold mb-0">Welcome to BlogDeck</h1>
+  <small class="text-uppercase text-muted">Data fetch by API</small>
+
+  <div class="row mb-2 mt-5 g-3">
+    {{#each blogs}}
+      <div class="col-md-6">
+        <div class="row shadow-sm position-relative">
+          <div class="col-md-8">
+            <span class="badge bg-primary baadge-pill my-3">Development</span>
+            <h3 class="mb-0 text-primary">{{this.title}}</h3>
+            <div class="mb-1 text-muted border-top mt-2 pt-2">Published On Nov
+              12</div>
+            <a
+              href="/blogs/{{this.slugs}}"
+              class="btn btn-outline-primary mt-2 text-decoration-none"
+            >Read More</a>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1436891620584-47fd0e565afb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dmVydGljYWwlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&w=1000&q=80"
+              width="100%"
+              alt=""
+            />
           </div>
         </div>
-  {{/each}}
-
       </div>
-    </div>
+    {{/each}}
+
+  </div>
+</div>
