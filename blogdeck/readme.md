@@ -3,7 +3,7 @@
 
 
 
-Blogdeck is a online blogging web app that build with ExpressJs and MongoDB. We can create new blogs, list blogs, view blogs with the use of MongoDB + Mongoose and readymade API.
+Blogdeck is an online blogging web app that build with ExpressJs and MongoDB. We can create new blogs, list blogs, view blogs with the use of MongoDB + Mongoose and readymade API.
 
 ## Features
 
