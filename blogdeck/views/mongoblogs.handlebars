@@ -1,0 +1,24 @@
+<!-- banner -->
+<div class="container py-3 my-5 text-center">
+  <h1 class="display-5 fw-bold Bold mb-5">Welcome to BlogDeck - MongoBlogs Page</h1>
+  <div class="row mb-2 g-5">
+    {{#each data}}
+
+      <div class="col-md-4">
+        <div
+          class="row shadow-sm border py-3 rounded-3 bg-light position-relative"
+        >
+          <div class="col-md-12">
+            <span class="badge bg-dark rounded-pill my-3">Development</span>
+            <h3 class="mb-0 text-dark fw-bolder">{{title}}</h3>
+            <p class="mb-1 text-muted border-top mt-2 pt-2">Published On Nov 12</p>
+            <a
+              href="/mongoblogs/{{slugs}}"
+              class="btn btn-outline-dark mt-3 text-decoration-none"
+            >Read More</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
